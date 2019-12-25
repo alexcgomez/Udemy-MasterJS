@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repaso HTML</title>
+</head>
+
+<body>
+    <h1>Encabezado h1: Debería haber solo 1 en cada página (SEO)</h1>
+    <h2>Encabezado h2: Subtítulo</h2>
+    <h3>Encabezado h3</h3>
+    <h4>Encabezado h4</h4>
+    <h5>Encabezado h5</h5>
+    <h6>Encabezado h6</h6>
+    <p>Etiqueta de parrafo 1: Lorem ipsum dolor sit amet consectetur, Esto es un salto de linea "br" adipisicing elit.
+        Officiis, dolorum!
+    </p>
+    <p>Etiqueta de parrafo 2: Lorem ipsum dolor sit amet br <br>, adipisicing elit. Et at mollitia labore aliquam
+        excepturi nostrum. Natus, iste non. Deserunt, nesciunt?</p>
+    <hr>
+    <p>Etiqueta de parrafo 3: Esto es un salto de linea dibujando linea "hr" Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Ea nisi blanditiis, illo, consectetur illum doloribus dignissimos sapiente nobis ducimus rem
+        ab consequuntur itaque corporis iste deserunt mollitia laudantium! Vero, suscipit!</p>
+    <hr>
+    <h2>Estilos de texto</h2>
+    <h3>Strong</h3>
+    <p><strong>El texto aparece en negrita</strong></p>
+    <h3>em</h3>
+    <p><em>Texto en cursiva</em></p>
+    <h3>Span</h3>
+    <p> <span id="Texto1" class="t1">La Etiqueta Span no hace nada, pero permite identificar el texto o añadirle una
+            clase</span></p>
+    <h3>Blockquote</h3>
+    <p>
+        <blockquote>El texto aparece en formato de cita</blockquote>
+    </p>
+    <h2>Listas</h2>
+    <h3>Listas ordenadas "lo"</h3>
+    <ol>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+        <li>Cuarto elemento</li>
+    </ol>
+    <h3>Listas desordenadas "ul"</h3>
+    <ul>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+        <li>Cuarto elemento</li>
+    </ul>
+    <hr>
+    <h2>Imagenes</h2>
+    <img src="Imagenes/1.jpg" alt="Planeta1" title="Planeta 1" width="100" height="100">
+    <img src="Imagenes/2.jpg" alt="Planeta 2" height="500">
+
+    <hr>
+
+    <h2>Tablas</h2>
+
+    <p>*Etiqueta coldspan sirve para que una celda ocupe más de una columna. </p>
+    <table border="1">
+        <tr>
+
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Pais</th>
+
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td>Caceres</td>
+            <td>España</td>
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td colspan="2"> Caceres</td>
+
+        </tr>
+    </table>
+
+
+    <h2>Formularios</h2>
+
+    <p>A los campos se les suele añadir <em>label</em> que indica el nombre del campo de texto. También, es una buena
+        práctica, añadir a la <em>label</em> un atributo <em>for</em> que indica el nombre del campo al que hace
+        referencia, por ejemplo: <br>
+        &lt;form&gt;<br>
+        &lt;label for="Nombre"&gt;Nombre&lt;/label&gt;<br>
+        &lt;input type="text" name="Nombre"&gt;<br>
+        &lt;form&gt;<br>
+    </p>
+    <form>
+        <p>
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" placeholder="Nombre">
+        </p>
+        <p>
+            <label for="Descripcion">Descripcion</label>
+            <textarea name="Descripcion"></textarea>
+        </p>
+        <input type="radio" name="genero" id="Hombre"> Hombre <br>
+        <input type="radio" name="genero" id="Mujer"> Mujer <br>
+        <input type="radio" name="genero" id="Nada"> Nada <br>
+
+        <select name="Selector" id="">
+            <option value="Hombre">Hombre</option>
+            <option value="Hombre">Mujer</option>
+            <option value="Nada">Nada</option>
+        </select>
+
+        <p>
+            <input type="submit" value="Enviar Formulario">
+        </p>
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
