@@ -2,20 +2,20 @@
 
 // DOM - Document Object Model
 
-// Selecciono elemento de la pagina mediante document
+// Selecciono elemento de la pagina mediante ID
 var caja = document.getElementById("micaja")
 
 // Lo puedo modificar desde JS
 caja.innerHTML = "Nuevo texto desde JS"
 
 // Puedo cambiar estilos
-caja.style.background = "Green"
-caja.style.color = "White"
+caja.style.background = "Green"   // Color de fondo
+caja.style.color = "White" // Color de la letra
 
 function cambia_color(color) {     
     caja.style.color = color
 }
-console.log(caja);
+console.log(caja.innerHTML);
 
 
 // QuerySelector
