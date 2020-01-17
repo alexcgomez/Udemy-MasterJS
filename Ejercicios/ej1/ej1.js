@@ -7,7 +7,7 @@ window.addEventListener('load', function(){
 
     var formulario = document.querySelector("#formulario");
     var box_dashed = document.querySelector(".dashed");
-    box_dashed.style.display = "none"
+    box_dashed.style.display = "none";
 
     formulario.addEventListener('submit', function(){
         
@@ -19,10 +19,16 @@ window.addEventListener('load', function(){
 
         box_dashed.style.display = "block";
 
-        console.log(nombre,apellido,edad);
+        var datos_usuario = [nombre, apellido, edad]
 
-        
-    
+        for (var i in datos_usuario) {
+            var parrafo = document.createElement("p");
+            parrafo.append(datos_usuario[i]);
+            box_dashed.append(parrafo)
+
+        }
+
+        console.log(nombre,apellido,edad);
 
     });
 
