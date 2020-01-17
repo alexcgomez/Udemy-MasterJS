@@ -25,3 +25,13 @@ console.log(caja);
 //      - "." Clase del elemento
 
 caja.querySelector("#micaja")
+
+// Seleccionar elementos by Tag
+
+var elementos  = document.getElementsByTagName("div")
+
+console.log(elementos);
+
+elementos[1].innerHTML = "Cambiando el contenido del div 1 mediante JS"
+
+console.log(elementos[1])
