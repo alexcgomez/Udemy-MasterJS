@@ -10,20 +10,25 @@ getUsuarios()                           // 1a Promesa
     .then(data => data.json())
     .then(users => {
         listadoUsuarios(users.data);
-        return getJanet();              // 2a promesa
+        return getInfo();               // 2a promesa
+
+    })
+    .then(data =>{
+        console.log(data);
+        return getJanet();              // 3a promesa
     })
     .then(data => data.json())
     .then(user =>{
         mostrarJanet(user.data);
-        return getInfo();               // 3a promesa
     })
-    .then(data =>{
-        console.log(data);
+    .catch(error =>{
+        console.log('error');
         
     })
+    
 
 function getUsuarios(){
-    return fetch('https://reqres.in/api/users')
+    return fetch('https://reqres.in3/api/users')
 }
 
 function getJanet(){
@@ -41,12 +46,14 @@ function getInfo() {
         var profesor_string = "";
         setTimeout(function(){
             profesor_string = JSON.stringify(profesor);
+            if(typeof profesor_string != 'string' || profesor_string == '') return reject('Error');
+            return resolve(profesor_string);
         },3000);
 
-        if(typeof profesor_string != 'string') return reject('Error');
+
     
-        return resolve(profesor_string)
-    })
+     
+    });
 }
 
 function mostrarJanet(user){
